@@ -1,0 +1,18 @@
+version: "2"
+services:
+  ui:
+    build: ./ui
+    image: password-encrypt-ui:latest
+    restart: unless-stopped
+    ports:
+       - "9000:8080"
+    links:
+      - api
+    depends_on:
+      - api
+  api:
+    build: ./api
+    image: password-encrypt-api:latest
+    restart: unless-stopped
+    expose:
+      - "9998"

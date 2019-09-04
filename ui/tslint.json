@@ -1,0 +1,25 @@
+{
+  "extends": ["tslint-eslint-rules-recommended","tslint-react", "tslint-config-prettier"],
+  "ordered-imports": [true, {
+    "import-sources-order": "any",
+    "named-imports-order": "case-insensitive"
+  }],
+  "rules": {
+    "max-line-length": {
+      "options": [120]
+    },
+    "triple-equals": true,
+    "no-console": {
+      "severity": "warning",
+      "options": ["debug", "info", "log", "time", "timeEnd", "trace"]
+    },
+    "class-name": true
+  },
+  "jsRules": {},
+  "linterOptions": {
+    "exclude": [
+      "config/**/*.js",
+      "node_modules/**/*.ts"
+    ]
+  }
+}
