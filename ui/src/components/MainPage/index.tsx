@@ -9,8 +9,8 @@ import {
     InputOnChangeData,
     Segment
 } from "semantic-ui-react";
-import ApiClientService from "../../api-client-service";
-import {EncryptRequest} from "../../api-models";
+import ApiClientService from "../../services/api-client-service";
+import {EncryptRequest} from "../../models/api-models";
 
 interface PageProps {
 }
@@ -21,7 +21,7 @@ interface PageState {
     encryptedValue: string;
 }
 
-class MainPage extends React.Component<PageProps, PageState> {
+class Index extends React.Component<PageProps, PageState> {
 
     private client: ApiClientService;
 
@@ -98,4 +98,4 @@ class MainPage extends React.Component<PageProps, PageState> {
     }
 }
 
-export default MainPage;
+export default Index;

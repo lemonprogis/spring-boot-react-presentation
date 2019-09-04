@@ -1,5 +1,5 @@
 import axios from 'axios';
-import {DecryptRequest, EncryptRequest} from "./api-models";
+import {DecryptRequest, EncryptRequest} from "../models/api-models";
 
 export default class ApiClientService {
     encryptValue = (encryptRequest: EncryptRequest): Promise<string> => {
