@@ -78,9 +78,7 @@ class Index extends React.Component<PageProps, PageState> {
                                 </Segment.Group>
                                 <Segment>Enter Password to Encrypt</Segment>
                                 <Segment.Group>
-                                    
                                     <Input type={"password"} name={"password"} id={"password"} onChange={this.handleChange} fluid={true} />
-
                                 </Segment.Group>
                                 <Segment>
                                     <Button content={"Encrypt Credential"} key={"fetchPassword"} onClick={this.handleGetPasswordClick} />
