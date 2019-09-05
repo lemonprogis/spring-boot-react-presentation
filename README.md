@@ -31,6 +31,10 @@ frontends.
 ### Using Flux to manage state
 ![Flux](images/flux.png "Flux")
 
+## Connectivity Overview
+![Connectivity Overview](images/container_connectivity.png "Connectivity Overview")
+
+
 License
 ----
 BSD
